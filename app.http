@@ -1,0 +1,24 @@
+GET http://localhost:3000/todos/?priority=HIGH&status=IN%20PROGRESS
+
+####
+GET http://localhost:3000/todos/?status=AVERAGE
+
+####
+GET http://localhost:3000/agenda/?date=2021-02-33
+
+###
+POST http://localhost:3000/todos/
+Content-Type: application/json
+
+{
+  "id": 6,
+  "todo": "Finalize event theme",
+  "priority": "LOW",
+  "status": "TO DO",
+  "category": "HOME",
+  "dueDate": "2021-02-22"
+}
+
+
+###
+GET http://localhost:3000/todos/2
